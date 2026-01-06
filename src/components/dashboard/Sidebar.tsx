@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LayoutDashboard, Users, Mic2 } from 'lucide-react';
+import { LayoutDashboard, Users, Music, Disc } from 'lucide-react';
 
 const navItems = [
   {
@@ -13,10 +13,15 @@ const navItems = [
     icon: Users,
   },
   {
-    label: 'Artists',
-    href: '/dashboard/artists',
-    icon: Mic2,
+    label: 'Albums',
+    href: '/dashboard/albums',
+    icon: Disc,
   },
+  {
+  label: 'Tracks',
+  href: '/dashboard/tracks',
+  icon: Music, // lucide
+  }
 ];
 
 export default function Sidebar() {
